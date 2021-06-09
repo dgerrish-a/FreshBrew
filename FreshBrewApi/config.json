@@ -1,0 +1,12 @@
+{
+	"loop":-1,
+	"loopwait":3000,
+	"threads":1,
+	"hits":[
+			{ "httpverb":"get", "url": "http://localhost:8080/api/order2/" },
+			{ "httpverb":"post", "url": "http://localhost:8080/api/order2", "payload": "{\"delaybyinseconds\":1}" },
+			{ "httpverb":"put", "url": "http://localhost:8080/api/order2/1", "payload": "{\"delaybyinseconds\":1}"},
+			{ "httpverb":"delete", "url": "http://localhost:8080/api/order2/1"  },
+			
+		]
+}
